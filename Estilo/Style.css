@@ -1,0 +1,51 @@
+body{
+  font:normal 15pt arial;
+  background-image: url('Imagens/fundo.jpg');
+}
+
+header{
+  text-align:center;
+  color: #6666;
+}
+section{
+  color: white;
+  border-radius:10px;
+  padding:15px;
+  width:290px;
+  margin:auto;
+  animation-name: fade;
+  animation-duration: 2s;
+  
+  
+}
+footer{
+  text-align:center;
+  color:#B0C4DE;
+  margin-top:10px;
+}
+
+section .inputs{
+  animation-name: move;
+  animation-duration: 2s
+}
+
+
+@keyframes fade{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes move{
+  from{
+    opacity: 0;
+    transform: translateX(-35%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

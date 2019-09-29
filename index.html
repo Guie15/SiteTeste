@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Estilo/Style.css">
+  <link rel="stylesheet" href="Estilo/bootstrap.css">
+  <title>Formulário</title>
+  
+  
+</head>
+
+<body>
+  <header>
+   
+     <h1 >Preencha suas informações!</h1>
+    
+  </header>
+ <section >
+   <form  name="formuser" action="enviar.php" method="POST">
+     
+     <div class="inputs">
+       Nome: <input class="form-control " type="text" name="nome" ><br><br>
+       E-mail: <input class="form-control" type="email" name="email" ><br><br>
+       Senha: <input class="form-control" type="password" name="senha"  ><br><br>
+     </div>
+     
+   </form>
+    
+     <div style="text-align: right;">
+       
+       <input type="submit" value="Cadastrar" class="btn btn-success" onclick="validar()" >
+   
+     </div>
+   </section>
+ 
+ <footer>&copy;GuiFelipe</footer>
+ 
+ <script src="Scripts/Main.js"></script>
+</body>
+</html>
